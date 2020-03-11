@@ -11,7 +11,7 @@ public class Conta {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
-	private String titulo;
+	private String titular;
 	private String numero;
 	private String banco;
 	private String agencia;
@@ -24,12 +24,12 @@ public class Conta {
 		this.id = id;
 	}
 
-	public String getTitulo() {
-		return titulo;
+	public String getTitular() {
+		return titular;
 	}
 
-	public void setTitulo(String titulo) {
-		this.titulo = titulo;
+	public void setTitular(String titular) {
+		this.titular = titular;
 	}
 
 	public String getNumero() {
