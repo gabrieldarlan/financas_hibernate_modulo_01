@@ -13,6 +13,14 @@ public class Categoria {
 	private Integer id;
 	private String nome;
 
+	@Deprecated
+	public Categoria() {
+		// TODO Auto-generated constructor stub
+	}
+	public Categoria(String nome) {
+		this.nome = nome;
+	}
+
 	public Integer getId() {
 		return id;
 	}
