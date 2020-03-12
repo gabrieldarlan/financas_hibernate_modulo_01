@@ -8,9 +8,10 @@ import br.com.caelum.financas.util.JPAUtil;
 public class TesteConta {
 
 	public static void main(String[] args) {
+		
 		Conta conta = new Conta();
-		conta.setTitular("Leonardo");
-		conta.setBanco("Caixa Economica");
+		conta.setTitular("Danilo");
+		conta.setBanco("Banco do Brasil");
 		conta.setAgencia("123");
 		conta.setNumero("456");
 
@@ -18,6 +19,9 @@ public class TesteConta {
 
 		em.getTransaction().begin();
 		em.persist(conta);
+		
+		conta.setBanco("Bradesco");
+		
 		em.getTransaction().commit();
 		
 		em.close();
